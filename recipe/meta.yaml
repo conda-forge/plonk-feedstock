@@ -1,5 +1,5 @@
 {% set name = "plonk" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6e73db8d89ca8c7b655d58c0f3c827d0eefd3a9e83990b6cc174caa976550591
+  sha256: 57c412aba40e54efe467d6f2d1196db44931baa3de0b7d5edc6131fc89dfd856
 
 build:
   noarch: python
