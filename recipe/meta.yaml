@@ -1,5 +1,5 @@
 {% set name = "plonk" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 21d28e46148f7a86fa63b777fddb2a93460dae986754d3604afe0c893d0e63c0
+  sha256: 5510f0ad6964a3a9d635704a8affad5a226b6aa0cedc1a1a38cc15501dd3ba16
 
 build:
   noarch: python
@@ -25,9 +25,10 @@ requirements:
     - numba
     - numpy
     - pandas
-    - pint
+    - pint >=0.10.1
     - scikit-image >=0.16
     - scipy
+    - tqdm
 
 test:
   imports:
@@ -37,7 +38,7 @@ about:
   home: https://github.com/dmentipl/plonk
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: 'Smoothed particle hydrodynamics analysis and visualization with Python.'
 
   description: 'Smoothed particle hydrodynamics analysis and visualization with Python.'
