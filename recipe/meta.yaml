@@ -1,5 +1,5 @@
 {% set name = "plonk" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5510f0ad6964a3a9d635704a8affad5a226b6aa0cedc1a1a38cc15501dd3ba16
+  sha256: 05be508e9bf0124b6fcff6162d5cd65e2bfa373e6485e72fa406a796d7e094c8
 
 build:
   noarch: python
@@ -26,9 +26,7 @@ requirements:
     - numpy
     - pandas
     - pint >=0.10.1
-    - scikit-image >=0.16
     - scipy
-    - tqdm
 
 test:
   imports:
