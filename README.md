@@ -5,7 +5,7 @@ Home: https://github.com/dmentipl/plonk
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Smoothed particle hydrodynamics analysis and visualization with Python.
 
