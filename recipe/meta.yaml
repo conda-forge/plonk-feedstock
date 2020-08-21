@@ -27,6 +27,7 @@ requirements:
     - pandas
     - pint >=0.10.1
     - scipy
+    - toml
 
 test:
   imports:
