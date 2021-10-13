@@ -5,9 +5,13 @@ Home: https://github.com/dmentipl/plonk
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plonk-feedstock/blob/master/LICENSE.txt)
 
 Summary: Smoothed particle hydrodynamics analysis and visualization with Python.
+
+Development: https://github.com/dmentipl/plonk
+
+Documentation: https://plonk.readthedocs.io/
 
 Smoothed particle hydrodynamics analysis and visualization with Python.
 
@@ -38,6 +42,7 @@ Installing `plonk` from the `conda-forge` channel can be achieved by adding `con
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `plonk` can be installed with:
@@ -108,9 +113,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
